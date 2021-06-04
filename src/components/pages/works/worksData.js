@@ -1,6 +1,7 @@
 import clone from '../../../../public/images/clone.jpeg'
 import jojo from '../../../../public/images/jooj.png'
 
+
 export const Myworks = [
     {
         path: "http://stw-uvg.site:3190/#",
@@ -18,7 +19,7 @@ export const Myworks = [
         path: "https://github.com/JuanPineda115/Jojojambo",
         label: "Unity, C#",
         src: jojo,
-        text: "2D Game made using Unity Engine, simple objective"
+        text: "2D Game made using Unity Engine, it is very simple, you can download de source files and .exe from de github repository, just click here!"
     },
     {
         path: "https://github.com/JuanPineda115/RPiGPIO",

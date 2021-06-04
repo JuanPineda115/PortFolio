@@ -1,44 +1,22 @@
 module.exports = {
-    env: {
-      browser: true,
-      es2021: true,
-      jest: true,
+    "env": {
+        "browser": true,
+        "es2021": true
     },
-    extends: [
-      'plugin:react/recommended',
-      'airbnb',
-    ],
-    parserOptions: {
-      ecmaFeatures: {
-        jsx: true,
+    "extends": "plugin:react/recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
         },
-      ecmaVersion: 12,
-      sourceType: 'module',
+        "ecmaVersion": 12,
+        "sourceType": "module"
     },
-    plugins: [
-      'react',
-      'jest',
+    "plugins": [
+        "react"
     ],
-    rules: {
-      semi: ['error', 'never'
-        ],
-      'react/react-in-jsx-scope': 'off',
-      'react/jsx-filename-extension': 'off',
-      'no-restricted-syntax': ['error', 'FunctionExpression', 'WithStatement',
-            "BinaryExpression[operator='in']"
-        ],
-      'import/no-cycle': ['error',
-            { maxDepth: '∞'
-            }
-        ],
-      'import/no-extraneous-dependencies': ['error',
-            { devDependencies: false, optionalDependencies: false, peerDependencies: false
-            }
-        ],
-    },
-    globals: {
-      React: 'readonly',
-      ReactDOM: 'readonly',
-      document: 'readonly',
-    },
-}
+    "rules": {
+        "semi": "off",
+        "react/prop-types": "off",
+        
+    }
+};

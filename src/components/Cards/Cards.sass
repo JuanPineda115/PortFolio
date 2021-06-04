@@ -11,7 +11,6 @@
     margin: 0 auto
   &-wrapper
     position: relative
-    margin: 50px 0 45px
   &-items
     margin-bottom: 24px
   &-single
@@ -19,9 +18,9 @@
     flex: 1
     margin: 0 1rem
     border-radius: 10px
+    min-height: 55vh
+    width: 100%
   &-item__link
-    display: flex
-    flex-flow: column
     width: 100%
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17)
     -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017))
@@ -66,27 +65,30 @@
   object-fit: cover
   transition: all 0.2s linear
 
-
   &:hover
     transform: scale(1.1)
 
 .works-item__info
-  padding: 20px 30px 30px
+  padding: 20px 30px 0px
+  height: 100%
+  align-content: center
 
 .works-item__text
   color: #252e48
   font-size: 18px
   line-height: 24px
 
-@media only screen and (min-width: 1200px)
-  .content__blog__container
-    width: 84%
-
 @media only screen and (min-width: 1024px)
   .works-items
     display: flex
     margin-bottom: 3rem
+    padding-left: 0px
+  .works-single
+    margin: 5vh 0 0 0
 
 @media only screen and (max-width: 1024px)
-  .works-item
-    margin-bottom: 2rem
+  .works-items
+    margin-bottom: 5vh
+    padding-left: 0px
+  .works-single
+    margin: 5vh 0 0 0

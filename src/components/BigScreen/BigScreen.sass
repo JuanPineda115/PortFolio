@@ -29,29 +29,22 @@
 @media screen and (max-width: 960px)
   .BigScreen-container > h1
     font-size: 70px
-    margin-top: -150px
     & h3
-    color: #fff
-    font-size: 2em
-    text-align: center
+      color: #fff
+      font-size: 2em
+      text-align: center
   .BigScreen-image
-    object-fit: cover
     width: calc(100vw)
-    height: calc(100vh)
-    position: fixed
+    height: fit-content
     z-index: -1
 
 
 
 @media screen and (max-width: 768px)
+  .BigScreen-container
+    height: fit-content
+    overflow-y: hidden
   .BigScreen-container > h1
     font-size: 2em
-    margin-top: -100px
   .BigScreen-container > p
     font-size: 1.3em
-  .BigScreen-image
-    object-fit: cover
-    width: calc(100vw)
-    height: calc(100vh)
-    position: fixed
-    z-index: -1

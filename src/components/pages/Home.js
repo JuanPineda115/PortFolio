@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../App.css';
+import '../../App.sass';
 import BigScreen from '../BigScreen/BigScreen';
 import Footer from '../Footer/Footer';
 

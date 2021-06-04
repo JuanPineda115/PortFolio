@@ -9,10 +9,11 @@ function Footer() {
       <div class='align-items-center footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>About This Page</h2>
+            <h2>More</h2>
             <a href="https://github.com/briancodex/react-website-v1/tree/master" target="_blank">Inspired In</a>
-            <Link to='/About'>About me</Link>
-            <Link to='/Technologies'>Technologies</Link>
+            <h4>Made in 2021</h4>
+            <h4>By Juan Pablo Pineda Melendez</h4>
+            <h4>Computer Science Engineering Student</h4>
           </div>
           </div>
         <div className='footer-link-wrapper'>

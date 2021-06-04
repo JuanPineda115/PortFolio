@@ -1,22 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Cards.sass'
 
 function CardItem(props) {
   return (
     <>
-      <li className='cards__item'>
-        <Link className='cards__item__link' to={props.path}>
-          <figure className='cards__item__pic-wrap' data-category={props.label}>
+      <li className='works-single'>
+        <a className='works-item__link' href={props.path} target='_blank'>
+          <figure className='works-item__pic-wrap' data-category={props.label}>
             <img
-              className='cards__item__img'
+              className='works-item__img'
               alt='Travel Image'
               src={props.src}
             />
           </figure>
-          <div className='cards__item__info'>
-            <h5 className='cards__item__text'>{props.text}</h5>
+          <div className='works-item__info'>
+            <h5 className='works-item__text'>{props.text}</h5>
           </div>
-        </Link>
+        </a>
       </li>
     </>
   );

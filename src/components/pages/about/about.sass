@@ -1,21 +1,44 @@
 .About
-    padding: 4rem
-    background: #fff
-    & h1
-        text-align: center
+    background: #dddddd
+    overflow-x: hidden
+    margin: 0
     &-container
-        display: flex
-        flex-flow: column
-        align-items: center
-        max-width: 1120px
-        width: 90%
-        margin: 0 auto
-    &-wrapper
-        position: relative
-        margin: 50px 0 45px
-    &-items
-        margin-bottom: 24px
+        width: 100vw
+        height: 100vh
+    &-MyPhoto
+        margin-left: 10vw
+        margin-top: 5vh
+        width: 30vw
+        height: auto
+    &-main
+        text-align: center
+    & h2
+        text-align: center
+        font-size: 4em
+        margin-top: 5vh
+    &-Allinfo
+        opacity: 75%
+        & h5
+            font-size: 2em
 
-@media only screen and (min-width: 1024px)
-.About-items
-    display: flex
+
+@media only screen and (max-width: 960px)
+    .About
+        &-container
+            width: 100vw
+            max-height: 100vh
+        &-MyPhoto
+            height: 40vw
+            width: auto
+            margin: 4vw
+        &-main
+            text-align: center
+            margin-top: 5vh
+        & h2
+            text-align: center
+            font-size: 2em
+        &-second
+            font-size: 1em
+            opacity: 75%
+            width: 90%
+            margin: 2vw

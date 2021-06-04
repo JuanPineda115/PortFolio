@@ -6,13 +6,13 @@ module.exports = {
     mode: "development",
     entry: "./src/index.js",
     output: {
-        filename: "[name].js",
-        path: path.resolve(__dirname, "dist")
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'index.js',
+        publicPath: '/'
     },
     plugins: [new MiniCssExtractPlugin(),
     new HtmlWebpackPlugin({
-        template: "./public/index.html",
-        filename: "index.html"
+        template: "./public/index.html"
     }),
     
     ],
@@ -47,5 +47,8 @@ module.exports = {
                 ],
             }
         ],
+    },
+    devServer: {
+        historyApiFallback: true,
     },
 };

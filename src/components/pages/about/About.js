@@ -30,8 +30,9 @@ const About = () => {
             </div>
             <div className="About-second">
               <h5 >
-                My favorite programming language is Python for sure but I enjoy coding for the most
-                part and languages. I was born and currently live in Guatemala City.
+                A guatemalan Computer Science Engineerings student. My favorite programming 
+                language is Python for sure but I enjoy coding for the most
+                part and languages. I currently live in Guatemala and I was born here too in 2001, yes I'm only 20 :D
               </h5>
               <p classname="About-parragraph">
                 I enjoy teamwork no matter the team as I also like a lot having challenges
@@ -51,8 +52,8 @@ const About = () => {
               part and languages. I currently live in Guatemala and was born there too in 2001, yes I'm only 20 :D
             </h5>
             <h5 classname="About-parragraph">
-              I enjoy teamwork,  having new challenges they help me to prove myself what I am made of, I'm always ready to take on new
-              challenges and to get out of my comfort zone.
+              I enjoy teamwork, hanging out with my friends, listening to music and having new challenges they help me to prove myself 
+              what I am capable of, I'm always ready to take on new challenges and to get out of my comfort zone.
             </h5>
           </div>
         </div>

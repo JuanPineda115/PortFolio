@@ -3,6 +3,7 @@
   background: #fff
   &-intro
     text-align: center
+    color: #fff
   &-container
     display: flex
     flex-flow: column
@@ -14,6 +15,7 @@
   &-items
     margin-bottom: 24px
   &-single
+    background-color: #ffffff
     display: flex
     flex: 1
     margin: 0 1rem
@@ -21,6 +23,7 @@
     min-height: 55vh
     width: 100%
   &-item__link
+    background-color: transparent
     width: 100%
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17)
     -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017))
@@ -85,6 +88,7 @@
     padding-left: 0px
   .works-single
     margin: 5vh 0 0 0
+    background-color: #fff
 
 @media only screen and (max-width: 1024px)
   .works-items
@@ -92,3 +96,29 @@
     padding-left: 0px
   .works-single
     margin: 5vh 0 0 0
+    background-color: #fff
+
+.bg
+  animation: slide 3s ease-in-out infinite alternate
+  background-image: linear-gradient(-60deg, #0a294a 50%, #3198bb 50%)
+  bottom: 0
+  left: -50%
+  opacity: .5
+  position: fixed
+  right: -50%
+  top: 0
+  z-index: -1
+
+  .bg2
+    animation-direction: alternate-reverse
+    animation-duration: 4s
+
+.bg3
+  animation-duration: 5s
+
+@keyframes slide
+  0%
+    transform: translateX(-25%)
+
+  100%
+    transform: translateX(25%)

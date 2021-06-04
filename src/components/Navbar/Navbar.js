@@ -37,12 +37,12 @@ function Navbar() {
             <FaIcons.FaBars className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
+            <li className='nav-item' data-testid="Links">
               <Link to='/#' className='nav-links' onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className='nav-item' data-testid="Links">
               <Link
                 to='/Myself'
                 className='nav-links'
@@ -51,13 +51,13 @@ function Navbar() {
                 About me
               </Link>
             </li>
-            <li className='nav-item'>
+            <li className='nav-item' data-testid="Links">
               <Link
-                to='/Works'
+                to='/MyProjects'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Works
+                My Projects
               </Link>
             </li>
           </ul>
